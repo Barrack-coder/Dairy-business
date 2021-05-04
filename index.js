@@ -63,3 +63,13 @@ var months = {
     December: 31,
 };
 var sellingPricePerLitre = 45;
+
+function incomeOverTime(selling_price, time) {
+    if (time == "weekly") {
+        let week = allProduction(sheds) * 7 * selling_price;
+        console.log("Your weekly income will be ksh " + week);
+    } else if (time == "yearly") {
+        let sum = 0;
+        for (let values of Object.values(months)) {
+            sum = values * allProduction(sheds) * selling_price;
+        }
