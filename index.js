@@ -33,15 +33,17 @@ var allProduction = function(e) {
 };
 
 var totalProduction = function(obj) {
-        for (let i = 0; i < obj.length; i++) {
-            console.log(
-                "Your production in " +
-                obj[i].name +
-                " " +
-                obj[i].averageProduction +
-                " litres per day"
-            );
-        }
+    for (let i = 0; i < obj.length; i++) {
         console.log(
-            "The total production is " + allProduction(obj) + " litres per day"
+            "Your production in " +
+            obj[i].name +
+            " " +
+            obj[i].averageProduction +
+            " litres per day"
         );
+    }
+    console.log(
+        "The total production is " + allProduction(obj) + " litres per day"
+    );
+
+};
