@@ -42,3 +42,6 @@ var totalProduction = function(obj) {
                 " litres per day"
             );
         }
+        console.log(
+            "The total production is " + allProduction(obj) + " litres per day"
+        );
