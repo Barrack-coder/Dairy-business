@@ -21,3 +21,13 @@ var sheds = [{
         averageProduction: 572,
     },
 ];
+
+var allProduction = function(e) {
+    let sum = 0;
+    for (let i = 0; i < e.length; i++) {
+        sum += e[i].averageProduction;
+        if (i == e.length - 1) {
+            return sum;
+        }
+    }
+};
