@@ -72,4 +72,7 @@ function incomeOverTime(selling_price, time) {
         let sum = 0;
         for (let values of Object.values(months)) {
             sum = values * allProduction(sheds) * selling_price;
-        }
+        };
+        console.log("Your yearly income will be Ksh " + sum);
+    }
+}
