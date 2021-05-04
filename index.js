@@ -78,3 +78,8 @@ function incomeOverTime(selling_price, time) {
 }
 incomeOverTime(sellingPricePerLitre, "weekly");
 incomeOverTime(sellingPricePerLitre, "yearly");
+
+function incomePerMonth(selling_price) {
+    let monthlyProduction;
+    for (let [keys, values] of Object.entries(months)) {
+        monthlyProduction = values * allProduction(sheds) * selling_price; //total amount per mounth
