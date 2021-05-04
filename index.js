@@ -76,3 +76,5 @@ function incomeOverTime(selling_price, time) {
         console.log("Your yearly income will be Ksh " + sum);
     }
 }
+incomeOverTime(sellingPricePerLitre, "weekly");
+incomeOverTime(sellingPricePerLitre, "yearly");
