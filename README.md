@@ -1,5 +1,5 @@
 # Dairy Business
-How milk is produced weely and yearlyl.
+How milk is produced weely and yearly.
 
 ## Technologies
 
